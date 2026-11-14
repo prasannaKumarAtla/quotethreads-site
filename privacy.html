@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quotes&amp;Threads Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Quotes&amp;Threads, an Android app for keeping and reflecting on quotes from the books you read.">
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --surface: #ffffff;
+      --text: #231f26;
+      --muted: #5f5966;
+      --accent: #6b4fa0;
+      --border: #e6e1ea;
+      --callout: #f1ecf8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1e1a22;
+        --surface: #27222c;
+        --text: #ece8f0;
+        --muted: #b0a9b8;
+        --accent: #c3a9f0;
+        --border: #3a3441;
+        --callout: #2f2838;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      line-height: 1.65;
+      font-size: 17px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+    header { padding: 24px 0 8px; }
+    .brand { font-family: system-ui, sans-serif; font-weight: 700; letter-spacing: .04em; color: var(--accent); font-size: .95rem; text-transform: uppercase; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 8px 0 4px; }
+    .meta { font-family: system-ui, sans-serif; color: var(--muted); font-size: .9rem; margin: 0; }
+    h2 { font-size: 1.3rem; margin: 2.2em 0 .4em; line-height: 1.3; }
+    h3 { font-size: 1.05rem; margin: 1.4em 0 .2em; font-family: system-ui, sans-serif; }
+    p, li { overflow-wrap: anywhere; }
+    a { color: var(--accent); }
+    ul { padding-left: 1.25em; }
+    li { margin: .3em 0; }
+    .callout {
+      background: var(--callout);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin: 20px 0;
+      font-family: system-ui, sans-serif;
+      font-size: .98rem;
+    }
+    .callout p { margin: .3em 0; }
+    table { width: 100%; border-collapse: collapse; font-family: system-ui, sans-serif; font-size: .92rem; margin: 12px 0; display: block; overflow-x: auto; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-family: system-ui, sans-serif; font-size: .88rem; }
+    code { font-size: .92em; background: var(--callout); padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Quotes&amp;Threads</div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: 2026-11-14</p>
+    </header>
+
+    <div class="callout">
+      <p><strong>The short version.</strong> Quotes&amp;Threads keeps your library, quotes and reflections on your phone. We run no servers, have no accounts, and use no analytics or advertising. The only time text or photos leave your phone is when <em>you</em> ask the app to use an AI provider you chose and supplied your own key for, when the app looks up a book you add (see section 3), when you buy Plus (see section 6), or when Android backs up the app to your own Google account (see section 7).</p>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>Quotes&amp;Threads (&ldquo;the app&rdquo;) is an Android app for collecting quotes from the books you read and reflecting on them. It is published by the Quotes&amp;Threads developer (&ldquo;we&rdquo;, &ldquo;us&rdquo;). You can contact us at <a href="mailto:prasannakumar.atla@gmail.com">prasannakumar.atla@gmail.com</a>.</p>
+
+    <h2>2. What stays on your device</h2>
+    <p>The following is stored only in the app&rsquo;s private storage on your phone (a local SQLite database and Android secure storage):</p>
+    <ul>
+      <li>Your library: book titles and authors you add.</li>
+      <li>Your quotes, including any quotes you import from Kindle or a Readwise CSV file.</li>
+      <li>Your reflections and notes.</li>
+      <li>Your settings, such as daily reminder time and number of daily quotes.</li>
+      <li>Your AI provider API key, kept in Android secure storage (the Keystore-backed <code>expo-secure-store</code>).</li>
+    </ul>
+    <p>We do not have access to any of this. It is never uploaded to us, because we operate no servers and the app has no user accounts.</p>
+
+    <h2>3. AI providers you choose (bring your own key)</h2>
+    <p>Quotes&amp;Threads&rsquo;s AI features work with an API key that you obtain and enter yourself. Quotes&amp;Threads supports Google Gemini, Anthropic (Claude), OpenAI, and a custom OpenAI-compatible endpoint that you specify (for example, a service or server you run yourself). The app talks to the provider <strong>directly from your device</strong>; the data does not pass through any server of ours.</p>
+    <p>When you use an AI feature, the app sends the provider you selected only what is needed for that request:</p>
+    <ul>
+      <li>The book title and author, inside a prompt written by the app, when you ask Quotes&amp;Threads to suggest quotes from a book.</li>
+      <li>A photo of a book page, when you use the scan or photo import feature, so the provider can read the quote from the image.</li>
+      <li>Your API key, as the credential for the request.</li>
+    </ul>
+    <p>Each provider handles that data under <strong>its own terms and privacy policy</strong>, which we do not control. Depending on the provider and your plan, they may retain requests or use them as described in their policies. Please review them before you add a key:</p>
+    <ul>
+      <li>Google Gemini: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and the Gemini API terms</li>
+      <li>Anthropic: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></li>
+      <li>OpenAI: <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a></li>
+      <li>Custom endpoint: the policy of whoever operates the endpoint you entered.</li>
+    </ul>
+    <p>Your saved quotes and your reflections are not sent to AI providers by the features described here.</p>
+    <p>If you never add an API key, Quotes&amp;Threads sends nothing to any AI provider. You can remove your key at any time in Settings.</p>
+
+    <h3>Book lookups (Wikiquote, Open Library, Project Gutenberg)</h3>
+    <p>Separately from AI providers, the app looks up books and quotes from public services. When you add a book or ask the app to find quotes, covers or public-domain text, the <strong>book title and author text</strong> you entered is sent to:</p>
+    <ul>
+      <li>Wikiquote (<code>en.wikiquote.org</code>), to find curated quotes.</li>
+      <li>Open Library (<code>openlibrary.org</code>, and <code>covers.openlibrary.org</code> to load cover images), to search for books and covers.</li>
+      <li>Gutendex (<code>gutendex.com</code>) and Project Gutenberg (<code>gutenberg.org</code>), to find and download public-domain texts.</li>
+    </ul>
+    <p>These requests contain no account, advertising ID or other identifier, because the app has none. Like any web request, they reveal your IP address and standard request details to those services, which handle them under their own policies. Your saved quotes and reflections are not sent in these lookups.</p>
+
+    <h2>4. Camera and photos</h2>
+    <p>Quotes&amp;Threads asks for camera and photo-library access only so you can capture or pick a picture of a book page. The picture is used to extract the quote text: it is sent to your chosen AI provider (see section 3) and is not otherwise uploaded. Quotes&amp;Threads does not use the microphone; the audio-recording permission is explicitly blocked.</p>
+
+    <h2>5. Notifications and alarms</h2>
+    <p>Quotes&amp;Threads uses notification, alarm and boot-completed permissions to show your daily quote reminder at the time you set and to restore it after you restart your phone. Reminders are scheduled locally on your device. No notification data is sent anywhere.</p>
+
+    <h2>6. Quotes&amp;Threads Plus subscription and Google Play Billing</h2>
+    <p>Quotes&amp;Threads offers an optional subscription, Quotes&amp;Threads Plus (&#8377;29 per month), which unlocks unlimited reflections and the home-screen widget. Purchases are processed entirely by <strong>Google Play Billing</strong>. We do not see or store your payment details, name or address. The app checks your subscription status with Google Play on your device. Google handles payment data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and Google Play terms. You can manage or cancel your subscription at any time in the Google Play Store under Payments &amp; subscriptions.</p>
+    <h3>Purchase verification</h3>
+    <p>When you buy or renew Plus, the app sends the Google Play <strong>purchase token, product ID and package name</strong> to the developer&rsquo;s verification service, which runs as a Cloudflare Worker. The service checks the purchase with Google Play and returns the result to the app. It stores nothing, and no personal data or library content (books, quotes, reflections) is sent. Cloudflare processes the request, including your IP address, as our infrastructure provider under the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.</p>
+
+    <h2>7. Optional backup</h2>
+    <h3>Backup file</h3>
+    <p>In Settings you can create a backup file of your library, quotes and reflections. The app hands the file to Android&rsquo;s share menu, and you choose where it goes (for example your own Google Drive, a Files folder or an email to yourself). We never receive it. You can restore from such a file at any time. Backup files never contain your AI provider API key or your subscription status.</p>
+    <h3>Android Auto Backup</h3>
+    <p>If you have Android backup turned on, the app&rsquo;s library database (books, quotes, reflections and settings) is included in Android&rsquo;s automatic backup to <strong>your own Google account</strong> (Google Drive). This is done by Android, not by us, and we cannot see or access it. Your API keys are excluded from this backup, so you must re-enter them on a new device. You can turn this off in Android Settings (Google &rarr; Backup) or delete the backup from your Google account.</p>
+    <h3>Importing highlights</h3>
+    <p>You can import highlights from a Kindle notebook export or a Readwise CSV file that you pick. The file is read on your phone and is not sent anywhere.</p>
+
+    <h2>8. What we do not do</h2>
+    <ul>
+      <li>We do not collect, receive, sell or share your personal data.</li>
+      <li>We do not use advertising, ad identifiers or ad networks.</li>
+      <li>We do not use analytics, tracking or crash-reporting services that send data about you to us.</li>
+      <li>We do not require or create any account.</li>
+    </ul>
+
+    <h2>9. Security</h2>
+    <p>Data sent from the app to AI providers, the book lookup services, the purchase verification service and Google Play travels over encrypted HTTPS connections. Release builds of the app only allow HTTPS, including for custom endpoints; unencrypted HTTP is not permitted. Your API key is stored in Android secure storage. No method of storage or transmission is perfectly secure, and you are responsible for keeping your API key private and for the provider account it belongs to.</p>
+
+    <h2>10. Your choices and deleting your data</h2>
+    <p>Because your data lives on your device and in your own accounts, you control it:</p>
+    <ul>
+      <li><strong>Delete everything on your phone:</strong> uninstall Quotes&amp;Threads, or go to Android Settings &rarr; Apps &rarr; Quotes&amp;Threads &rarr; Storage &rarr; Clear data.</li>
+      <li><strong>Remove your API key:</strong> clear it in the app&rsquo;s Settings, or revoke it in your AI provider&rsquo;s dashboard.</li>
+      <li><strong>Delete backup files:</strong> delete them from wherever you saved them (for example Google Drive or your Files app).</li>
+      <li><strong>Data held by AI providers:</strong> contact the provider or use their account controls; we cannot access or delete that data on your behalf.</li>
+      <li><strong>Subscription:</strong> cancel in Google Play. Deleting the app does not cancel a subscription.</li>
+    </ul>
+    <p>Since we hold no personal data about you, there is nothing for us to delete on our side. If you have questions or requests, email <a href="mailto:prasannakumar.atla@gmail.com">prasannakumar.atla@gmail.com</a>.</p>
+
+    <h2>11. Children</h2>
+    <p>Quotes&amp;Threads is not directed at children under 13 (or the minimum age required in your country), and we do not knowingly collect personal information from them. Using AI providers and Google services also requires meeting those services&rsquo; own age requirements.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>If we change this policy, we will update the effective date above and publish the new version at this address. Material changes will also be noted in the app&rsquo;s release notes.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions about this policy: <a href="mailto:prasannakumar.atla@gmail.com">prasannakumar.atla@gmail.com</a>.</p>
+
+    <footer>
+      Quotes&amp;Threads &middot; Privacy Policy &middot; Effective 2026-11-14 &middot; <a href="index.html">Home</a>
+    </footer>
+  </div>
+</body>
+</html>
